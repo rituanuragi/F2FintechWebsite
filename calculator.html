@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>F2 Fintech</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="./calculator.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 ">
+    <a href="about.html" class="navbar-brand d-flex align-items-center">
+      <h3 class="m-0"><img class="icon me-2" src="img/icon/F2-Fintech-logo-1(2).ico" alt="">Fintech</h3>
+  </a>
+    </a>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0">
+          <a href="index.html" class="nav-item nav-link active">Home</a>
+          <a href="about.html" class="nav-item nav-link">About Us</a>
+          <!-- <a href="service.html" class="nav-item nav-link">Our Services</a> -->
+          <div class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Our Services</a>
+              <div class="dropdown-menu bg-light border-0 m-0">
+                <a href="Personalloan.html" class="dropdown-item">Personal Loan</a>
+                  <a href="Personalloan.html" class="dropdown-item">Personal Loan</a>
+                  <a href="" class="dropdown-item">Professional Loan</a>
+                  <a href="" class="dropdown-item">Finance Advisory</a>
+                  <a href="" class="dropdown-item">Cibil Score</a>
+                  <a href="" class="dropdown-item">Indemnity Plan</a>
+                  <!-- <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                  <a href="404.html" class="dropdown-item">404 Page</a> -->
+              </div>
+          </div>
+          <a href="contact.html" class="nav-item nav-link">Products</a>
+          <div class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Employee Login</a>
+              <div class="dropdown-menu bg-light border-0 m-0">
+                  <a href="feature.html" class="dropdown-item">Case Login Application</a>
+                  <a href="http://13.232.127.73:3000/" class="dropdown-item">Ops Management System</a>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdvKKQquu_t8QnqRQ_5eox6ZSmG8CaMi6gyTzlorB2VgZUtYA/viewform" class="dropdown-item">Sales Visit Tracker</a>
+                  <!-- <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                  <a href="404.html" class="dropdown-item">404 Page</a> -->
+              </div>
+          </div>
+
+          <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+      </div>
+  </div>
+  <a href="" class="btn btn-primary px-3 d-none d-lg-block">Sign In</a>
+</nav>
+<!-- Navbar End -->
+
+
+
+    <div class="sidebar">
+  
+        <a href="#" class="calculator-btn" data-target="#personal">Personal</a>
+        <a href="#" class="calculator-btn" data-target="#professional">Professional</a>
+        <a href="#" class="calculator-btn" data-target="#business">Business</a>
+        <a href="#" class="calculator-btn" data-target="#emi">EMI Calculator</a>
+    </div>
+
+    <div class="content">
+        <div id="personal" class="calculator-form">
+            <!-- <h3 class="text-center mb-3">Personal Loan Calculator</h3> -->
+            <!-- Personal Loan Calculator Form -->
+            <form>
+              <div class="container">
+                <!-- <h1>Personal Loan</h1> -->
+                <h1>Personal Loan</h1>
+                <div class="form-group">
+                    <label for="total-salary">Total Salary</label>
+                    <input type="number" id="total-salary" value="0.00" step="0.01">
+                </div>
+                <div class="form-group">
+                    <label for="total-obligation">Total Obligation</label>
+                    <input type="number" id="total-obligation" value="0.00" step="0.01">
+                </div>
+                <div class="form-group">
+                    <label for="bank">Select Bank</label>
+                    <select id="bank">
+                        <option value="hdfc">HDFC</option>
+                        <option value="hdfc">ICICI</option>
+                        <option value="hdfc">KOTAK</option>
+                        <option value="hdfc">YES</option>
+                        <option value="hdfc">AXIS</option>
+                        <option value="hdfc">BAJAJ</option>
+                        <option value="hdfc">CHOLA</option>
+                        <option value="hdfc">L&T</option>
+                        <option value="hdfc">GODREJ</option>
+                       
+                        <!-- Add more bank options here -->
+                    </select>
+                </div>
+                <button id="calculate-btn">Calculate Eligibility: Personal Loan</button>
+            </div>
+            <script src="script.js"></script>
+        
+            </form>
+            <form>
+                <div class="container1">
+                    <h3>Average Bank Balance (ABB) Calculator</h3>
+                    <p>Enter the amount present in the account on specific dates to calculate the Average Bank Balance.</p>
+                    <div class="form-row">
+                        <div class="form-group1">
+                            <label for="date-5">Amount on Date 5</label>
+                            <input type="number" id="date-5" value="1" min="0">
+                        </div>
+                        <div class="form-group1">
+                            <label for="date-10">Amount on Date 10</label>
+                            <input type="number" id="date-10" value="0" min="0">
+                        </div>
+                        <div class="form-group1">
+                            <label for="date-15">Amount on Date 15</label>
+                            <input type="number" id="date-15" value="0" min="0">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group1">
+                            <label for="date-20">Amount on Date 20</label>
+                            <input type="number" id="date-20" value="0" min="0">
+                        </div>
+                        <div class="form-group1">
+                            <label for="date-25">Amount on Date 25</label>
+                            <input type="number" id="date-25" value="0" min="0">
+                        </div>
+                        <div class="form-group1">
+                            <label for="date-30">Amount on Date 30</label>
+                            <input type="number" id="date-30" value="0" min="0">
+                        </div>
+                    </div>
+                    <button id="calculate-btn">Calculate Average Bank Balance</button>
+                </div>
+            </form>
+            
+        </div>
+        <div id="professional" class="calculator-form">
+            <!-- <h3 class="text-center mb-3">Professional Loan Calculator</h3> -->
+            <div class="container">
+              <h1>Professional Loan</h1>
+              <div class="form-group">
+                  <label for="profession">Select Profession</label>
+                  <select id="profession">
+                      <option value="bams">BAMS</option>
+                      <option value="bams">BHMS</option>
+                      <option value="bams">BDS</option>
+                      <option value="bams">MBBS</option>
+                      <option value="bams">MD/MS</option>
+                     
+                      <!-- Add more profession options here -->
+                  </select>
+              </div>
+              <div class="form-group">
+                  <label for="experience">Years of Experience</label>
+                  <input type="number" id="experience" value="0" min="0">
+              </div>
+              <div class="form-group">
+                  <label>
+                      <input type="checkbox" id="cibil-score">
+                      CIBIL Score (0, 1)
+                  </label>
+              </div>
+              <button id="calculate-btn">Calculate Eligibility: Professional Loan</button>
+          </div>
+          <script src="script.js"></script>
+          <form>
+            <div class="container1">
+                <h3>Average Bank Balance (ABB) Calculator</h3>
+                <p>Enter the amount present in the account on specific dates to calculate the Average Bank Balance.</p>
+                <div class="form-row">
+                    <div class="form-group1">
+                        <label for="date-5">Amount on Date 5</label>
+                        <input type="number" id="date-5" value="1" min="0">
+                    </div>
+                    <div class="form-group1">
+                        <label for="date-10">Amount on Date 10</label>
+                        <input type="number" id="date-10" value="0" min="0">
+                    </div>
+                    <div class="form-group1">
+                        <label for="date-15">Amount on Date 15</label>
+                        <input type="number" id="date-15" value="0" min="0">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group1">
+                        <label for="date-20">Amount on Date 20</label>
+                        <input type="number" id="date-20" value="0" min="0">
+                    </div>
+                    <div class="form-group1">
+                        <label for="date-25">Amount on Date 25</label>
+                        <input type="number" id="date-25" value="0" min="0">
+                    </div>
+                    <div class="form-group1">
+                        <label for="date-30">Amount on Date 30</label>
+                        <input type="number" id="date-30" value="0" min="0">
+                    </div>
+                </div>
+                <button id="calculate-btn">Calculate Average Bank Balance</button>
+            </div>
+        </form>
+        </div>
+        <div id="business" class="calculator-form">
+            <!-- <h3 class="text-center mb-3">Business Loan Calculator</h3> -->
+            <div class="container">
+              <h1>Business Loan</h1>
+              <div class="form-group">
+                  <label for="turnover-amount">Turnover Amount</label>
+                  <input type="number" id="turnover-amount" value="0" min="0">
+              </div>
+              <div class="form-group">
+                  <label for="net-profit-amount">Net Profit Amount</label>
+                  <input type="number" id="net-profit-amount" value="0" min="0">
+              </div>
+              <div class="form-group">
+                  <label for="gross-profit-amount">Gross Profit Amount</label>
+                  <input type="number" id="gross-profit-amount" value="0" min="0">
+              </div>
+              <div class="form-group">
+                  <label for="obligation-amount">Obligation Amount</label>
+                  <input type="number" id="obligation-amount" value="0" min="0">
+              </div>
+              <div class="form-group">
+                  <label>Obligation Frequency</label>
+                  <div class="radio-group">
+                      <label>
+                          <input type="radio" name="obligation-frequency" value="monthly" checked>
+                          Monthly
+                      </label>
+                      <label>
+                          <input type="radio" name="obligation-frequency" value="yearly">
+                          Yearly
+                      </label>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label>Choose Calculation Basis</label>
+                  <div class="radio-group">
+                      <label>
+                          <input type="radio" name="calculation-basis" value="turnover" checked>
+                          Turnover
+                      </label>
+                      <label>
+                          <input type="radio" name="calculation-basis" value="net-profit">
+                          Net Profit
+                      </label>
+                      <label>
+                          <input type="radio" name="calculation-basis" value="gross-profit">
+                          Gross Profit Amount
+                      </label>
+                  </div>
+              </div>
+              <button id="calculate-btn">Calculate Eligibility: Business Loan</button>
+          </div>
+          <form>
+            <div class="container1">
+                <h3>Average Bank Balance (ABB) Calculator</h3>
+                <p>Enter the amount present in the account on specific dates to calculate the Average Bank Balance.</p>
+                <div class="form-row">
+                    <div class="form-group1">
+                        <label for="date-5">Amount on Date 5</label>
+                        <input type="number" id="date-5" value="1" min="0">
+                    </div>
+                    <div class="form-group1">
+                        <label for="date-10">Amount on Date 10</label>
+                        <input type="number" id="date-10" value="0" min="0">
+                    </div>
+                    <div class="form-group1">
+                        <label for="date-15">Amount on Date 15</label>
+                        <input type="number" id="date-15" value="0" min="0">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group1">
+                        <label for="date-20">Amount on Date 20</label>
+                        <input type="number" id="date-20" value="0" min="0">
+                    </div>
+                    <div class="form-group1">
+                        <label for="date-25">Amount on Date 25</label>
+                        <input type="number" id="date-25" value="0" min="0">
+                    </div>
+                    <div class="form-group1">
+                        <label for="date-30">Amount on Date 30</label>
+                        <input type="number" id="date-30" value="0" min="0">
+                    </div>
+                </div>
+                <button id="calculate-btn">Calculate Average Bank Balance</button>
+            </div>
+        </form>
+        </div>
+        <div id="emi" class="calculator-form">
+       
+            <!-- EMI Calculator Form -->
+            <form>
+              <div class="container">
+                <h1>EMI Calculator</h1>
+                <div class="form-group">
+                    <label for="loan-amount">Loan Amount for EMI</label>
+                    <input type="number" id="loan-amount" value="0" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="interest-rate">Interest Rate for EMI (%)</label>
+                    <input type="number" id="interest-rate" value="0" min="0" step="0.01">
+                </div>
+                <div class="form-group">
+                    <label for="loan-tenor">Loan Tenor for EMI (in years)</label>
+                    <input type="number" id="loan-tenor" value="1" min="1">
+                </div>
+                <button id="calculate-btn">Calculate EMI</button>
+                <div id="emi-result"></div>
+            </div>
+            </form>
+            <form>
+                <div class="container1">
+                    <h3>Average Bank Balance (ABB) Calculator</h3>
+                    <p>Enter the amount present in the account on specific dates to calculate the Average Bank Balance.</p>
+                    <div class="form-row">
+                        <div class="form-group1">
+                            <label for="date-5">Amount on Date 5</label>
+                            <input type="number" id="date-5" value="1" min="0">
+                        </div>
+                        <div class="form-group1">
+                            <label for="date-10">Amount on Date 10</label>
+                            <input type="number" id="date-10" value="0" min="0">
+                        </div>
+                        <div class="form-group1">
+                            <label for="date-15">Amount on Date 15</label>
+                            <input type="number" id="date-15" value="0" min="0">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group1">
+                            <label for="date-20">Amount on Date 20</label>
+                            <input type="number" id="date-20" value="0" min="0">
+                        </div>
+                        <div class="form-group1">
+                            <label for="date-25">Amount on Date 25</label>
+                            <input type="number" id="date-25" value="0" min="0">
+                        </div>
+                        <div class="form-group1">
+                            <label for="date-30">Amount on Date 30</label>
+                            <input type="number" id="date-30" value="0" min="0">
+                        </div>
+                    </div>
+                    <button id="calculate-btn">Calculate Average Bank Balance</button>
+                </div>
+            </form>
+           
+        </div>
+    </div>
+  
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script>
+        $(document).ready(function(){
+            $(".calculator-btn").click(function(){
+                var target = $(this).data('target');
+                $(".calculator-form").hide();
+                $(target).show();
+            });
+        });
+    </script>
+</body>
+</html>
